@@ -1,0 +1,78 @@
+import { ReceivedCard } from './types';
+
+export const MOCK_CARDS: ReceivedCard[] = [
+  {
+    id: 'mock-1',
+    receivedAt: Date.now() - 1000 * 60 * 60 * 2,
+    myNotes: 'Met at the Figma meetup, wants to grab coffee next week',
+    card: {
+      firstName: 'Sarah',
+      lastName: 'Chen',
+      title: 'Product Designer',
+      company: 'Northwind Studio',
+      phones: [{ label: 'mobile', value: '(555) 214-7788' }],
+      emails: [{ label: 'work', value: 'sarah.chen@northwind.studio' }],
+      website: 'sarahchen.design',
+      address: '',
+      notes: '',
+      social: [{ platform: 'linkedin', url: 'linkedin.com/in/sarahchen' }],
+    },
+  },
+  {
+    id: 'mock-2',
+    receivedAt: Date.now() - 1000 * 60 * 60 * 24,
+    myNotes: '',
+    card: {
+      firstName: 'Marcus',
+      lastName: 'Alvarez',
+      title: 'Senior Backend Engineer',
+      company: 'Ledgerly',
+      phones: [
+        { label: 'work', value: '(555) 903-2210' },
+        { label: 'mobile', value: '(555) 448-1102' },
+      ],
+      emails: [{ label: 'work', value: 'marcus@ledgerly.io' }],
+      website: '',
+      address: '',
+      notes: '',
+      social: [{ platform: 'github', url: 'github.com/malvarez' }],
+    },
+  },
+  {
+    id: 'mock-3',
+    receivedAt: Date.now() - 1000 * 60 * 60 * 24 * 3,
+    myNotes: 'Interested in the Q3 partnership deck',
+    card: {
+      firstName: 'Priya',
+      lastName: 'Natarajan',
+      title: 'VP Marketing',
+      company: 'Brightloop',
+      phones: [{ label: 'mobile', value: '(555) 776-0043' }],
+      emails: [
+        { label: 'work', value: 'priya@brightloop.com' },
+        { label: 'other', value: 'priya.n@gmail.com' },
+      ],
+      website: 'brightloop.com',
+      address: '',
+      notes: '',
+      social: [],
+    },
+  },
+  {
+    id: 'mock-4',
+    receivedAt: Date.now() - 1000 * 60 * 60 * 24 * 9,
+    myNotes: '',
+    card: {
+      firstName: 'Diego',
+      lastName: 'Fontaine',
+      title: '',
+      company: 'Freelance Illustrator',
+      phones: [],
+      emails: [{ label: 'other', value: 'diego.fontaine@proton.me' }],
+      website: 'diegofontaine.art',
+      address: '',
+      notes: '',
+      social: [{ platform: 'instagram', url: 'instagram.com/diegofontaine' }],
+    },
+  },
+];
